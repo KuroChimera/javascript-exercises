@@ -1,5 +1,5 @@
 const sumAll = function(num1, num2) {
-  if (Number.isNaN(num1) || Number.isNaN(num2)) {
+  if (isNaN(num1) || isNaN(num2)) {
     return "ERROR";
   }
   if (num1 < 0 || num2 < 0) {
