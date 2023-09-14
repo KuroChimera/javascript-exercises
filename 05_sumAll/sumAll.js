@@ -1,12 +1,12 @@
-const sumAll = function(num1, numb2) {
-  if (isNaN(num1) || isNaN(numb2)){
+const sumAll = function(num1, num2) {
+  if (Number.isNaN(num1) || Number.isNaN(num2)) {
     return "ERROR";
   }
-  if (num1 < 0 || numb2 < 0) {
+  if (num1 < 0 || num2 < 0) {
     return "ERROR"
   }
-  let min = Math.min(num1, numb2);
-  let max = Math.max(num1, numb2);
+  let min = Math.min(num1, num2);
+  let max = Math.max(num1, num2);
   let total = 0;
 
   for (let i = min; i <= max; i++) {
